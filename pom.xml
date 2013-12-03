@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.cary</groupId>
+    <artifactId>stq</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>stq-common</module>
+        <module>stq-service</module>
+        <module>stq-web</module>
+    </modules>
+    <name>stq Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <json.version>2.4</json.version>
+        <junit.version>4.11</junit.version>
+        <jetty.version>6.1.26</jetty.version>
+        <mybatis.version>3.2.3</mybatis.version>
+        <mysql.version>5.1.27</mysql.version>
+        <springframework.version>3.2.5.RELEASE</springframework.version>
+        <log4j.version>1.2.17</log4j.version>
+        <commons-logging.version>1.1</commons-logging.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <servlet.version>2.5</servlet.version>
+        <jstl.version>1.2</jstl.version>
+        <jsp.version>2.2</jsp.version>
+        <cglib.version>3.0</cglib.version>
+        <sitemesh.version>2.4.2</sitemesh.version>
+        <jasper.version>5.5.0</jasper.version>
+        <ehcache.version>2.7.4</ehcache.version>
+        <json-lib.version>2.4</json-lib.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>stq</finalName>
+    </build>
+</project>
